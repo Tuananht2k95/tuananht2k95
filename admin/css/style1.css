@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+.card {
+    display: flex;
+}
+.padleft-10 {
+    padding-left: 10.5rem;
+}
+.padleft-5 {
+    padding-left: 4rem;
+}
+.w-aside-10 {
+    width: 10rem;
+}
+.w-aside-5 {
+    width: 4rem;
+}
+aside img {
+    width: 33px;
+    aspect-ratio: 1;
+}
+.iInP {
+    right: 10px;
+}

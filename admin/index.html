@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        bootstrap
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <meta name="viewport" content="width=devide-width, intitial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="scss/style.css"> -->
+    <link rel="stylesheet" href="css/style1.css">
+</html>
+    <div id="nav" class="padleft-10 d-flex justify-content-between">
+        <ul class="d-flex list-group">
+            <li>
+                <a class="nav-link" href="#" role="button" onclick="changeAside()">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </li>
+            <li>
+
+            </li>
+        </ul>
+        <ul class="d-flex list-group">
+            <li>
+                <form class="d-flex" role="search">
+                    <input id="searchButton" class="form-control me-2 d-none" type="search" placeholder="Search" aria-label="Search">
+                    <button type="button" onclick="clickSearch()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                  </form>
+            </li>
+            <li>
+
+            </li>
+        </ul>
+    </div>
+    <aside id="aside" class="position-absolute w-aside-10">
+        <div id="logo">
+            <a href="#" target="_parent" class="d-flex">
+                <img class="" src="https://adminlte.io/themes/v3/dist/img/AdminLTELogo.png">
+                <p class="pAside">AdminLTE 3</p>
+            </a>
+        </div>
+        <div id="user" class="d-flex">
+            <img class="" src="https://adminlte.io/themes/v3/dist/img/user2-160x160.jpg">
+            <span class="pAside">Le Tuan Anh</span>
+        </div>
+        <div id="aside-search">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+        <ul class="list-group">
+            <li>
+                <a href="#" class="nav-link d-flex position-relative" onclick="dropDown('dropDown1')">
+                    <i class="fas fa-edit"></i>
+                    <div class="pAside">
+                        <p>
+                            Form
+                            <i class="fas fa-angle-left position-absolute iInP"></i>
+                        </p>
+                    </div>  
+                </a>
+                <ul id="dropDown1" class="list-group d-none">
+                    <li>
+                        <a href="#" class="nav-link d-flex">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>General Element</p>
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link d-flex">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Advanced Element</p>
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link d-flex">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Editors</p>
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link d-flex">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Validation</p>
+                        </a> 
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="nav-link d-flex position-relative" onclick="dropDown('dropDown2')">
+                    <i class="fas fa-edit"></i>
+                    <div class="pAside">
+                        <p>
+                            Form
+                            <i class="fas fa-angle-left position-absolute iInP"></i>
+                        </p>
+                    </div>  
+                </a>
+                <ul id="dropDown2" class="list-group d-none">
+                    <li>
+                        <a href="#" class="nav-link d-flex">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>General Element</p>
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link d-flex">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Advanced Element</p>
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link d-flex">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Editors</p>
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link d-flex">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Validation</p>
+                        </a> 
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="nav-link d-flex position-relative" onclick="dropDown('dropDown3')">
+                    <i class="fas fa-edit"></i>
+                    <div class="pAside">
+                        <p>
+                            Form
+                            <i class="fas fa-angle-left position-absolute iInP"></i>
+                        </p>
+                    </div>  
+                </a>
+                <ul id="dropDown3" class="list-group d-none">
+                    <li>
+                        <a href="#" class="nav-link d-flex">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>General Element</p>
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link d-flex">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Advanced Element</p>
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link d-flex">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Editors</p>
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link d-flex">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Validation</p>
+                        </a> 
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="nav-link d-flex position-relative" onclick="dropDown('dropDown4')">
+                    <i class="fas fa-edit"></i>
+                    <div class="pAside">
+                        <p>
+                            Form
+                            <i class="fas fa-angle-left position-absolute iInP"></i>
+                        </p>
+                    </div>  
+                </a>
+                <ul id="dropDown4" class="list-group d-none">
+                    <li>
+                        <a href="#" class="nav-link d-flex">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>General Element</p>
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link d-flex">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Advanced Element</p>
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link d-flex">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Editors</p>
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link d-flex">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Validation</p>
+                        </a> 
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        
+
+
+    </aside>
+    <div id="main" class="container-fluid padleft-10">
+        <div id="header" class="d-flex justify-content-between">
+            <p class="col-6">General Form</p>
+            <div class="col-6 text-end">
+                <a href="#" target="_blank">Home</a>
+                <i class="fa-solid fa-minus"></i>
+                <span class="">General Form</span>
+            </div>
+        </div>
+        <div class="row row-cols-2">
+            <div class="col-12 col-lg-6">
+                <div class="card card-primary">
+                    <div class="card-header">
+                        Quick Example
+                    </div>
+                    <form>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Email">                    
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword5" class="form-label">Password</label>
+                                <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                            </div>
+                            <div class="form-group">
+                                <div class="mb-3">
+                                    <label for="formFile" class="form-label">File Input</label>
+                                    <input class="form-control" type="file" id="formFile">
+                                  </div>
+                            </div>
+                        </div>
+        
+                    </form>
+                  
+                </div>
+                <div class="card card-primary">
+                    <div class="card-header">
+                        Different Styles 
+                    </div>
+                    <form>
+                        <div class="card-body">
+                            <h4>Input</h4>
+                            <div class="form-group">
+                                <label for="exampleInputBorder">
+                                    Bottom Border only
+                                <code>.form-control-border</code>
+                                </label>
+                                <input type="text" class="form-control form-control-border" id="exampleInputBorder" placeholder=".form-control-border">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputBorderWidth2">
+                                    Bottom Border only 2px Border
+                                    <code>.form-control-border.border-width-2</code>
+                                </label>
+                                <input type="text" class="form-control form-control-border border-width-2" id="exampleInputBorderWidth2" placeholder=".form-control-border.border-width-2">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputRounded0">
+                                    Flat
+                                    <code>.rounded-0</code>
+                                </label>
+                                <input type="text" class="form-control rounded-0" id="exampleInputRounded0" placeholder="rounded-0">
+                            </div>
+                            <h4>Custom Seclect</h4>
+                            <div class="form-group">
+                                <label for="exampleSelectBoder">
+                                    Bottom Border only
+                                    <code>.form-control-border</code>
+                                </label>
+                                <select class="custom-select form-control-border" id="exampleSelectBoder">
+                                    <option>
+                                        Value 1
+                                    </option>
+                                    <option>
+                                        Value 2
+                                    </option>
+                                    <option>
+                                        Value 3
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputBorderWidth2">
+                                    Bottom Border only 2px Border
+                                    <code>.form-control-border.border-width-2</code>
+                                </label>
+                                <select class="custom-select form-control-border border-width-2" id="exampleSelectBorderWidth2">
+                                    <option>
+                                        Value 1
+                                    </option>
+                                    <option>
+                                        Value 2
+                                    </option>
+                                    <option>
+                                        Value 3
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputRounded0">
+                                    Flat
+                                    <code>.rounded-0</code>
+                                </label>
+                                <select class="custom-select rounded-0" id="exampleSelectRounded0">
+                                    <option>
+                                        Value 1
+                                    </option>
+                                    <option>
+                                        Value 2
+                                    </option>
+                                    <option>
+                                        Value 3
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+                <div class="card card-info">
+                    <div class="card-header">
+                        Input Addon
+                    </div>
+                    <form>
+                        <div class="card-body">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">@</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Username">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">.00</span>
+                                </div>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">@</span>
+                                </div>
+                                <input type="text" class="form-control">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">.00</span>
+                                </div>
+                            </div>
+                            <h4>With icons</h4>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                </div>
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-check"></i></span>
+                                </div>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-dollar-sign"></i></span>
+                                </div>
+                                <input type="text" class="form-control">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-ambulance"></i></span>
+                                </div>
+                            </div>
+                            <h5>With checkbox and radio inputs</h5>
+                            <div class="d-flex">
+                                <div class="col-lg-6">
+                                    <div class="input-group d-flex">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><input type="checkbox"></span>
+                                        </div>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="input-group d-flex">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><input type="radio"></select></span>
+                                        </div>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="card card-primary">
+                    <div class="card-header">
+                        Quick Example
+                    </div>
+                    <form>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Email">                    
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword5" class="form-label">Password</label>
+                                <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                            </div>
+                            <div class="form-group">
+                                <div class="mb-3">
+                                    <label for="formFile" class="form-label">File Input</label>
+                                    <input class="form-control" type="file" id="formFile">
+                                  </div>
+                            </div>
+                        </div>
+        
+                    </form>
+                  
+                </div>
+                <div class="card card-primary">
+                    <div class="card-header">
+                        Different Styles 
+                    </div>
+                    <form>
+                        <div class="card-body">
+                            <h4>Input</h4>
+                            <div class="form-group">
+                                <label for="exampleInputBorder">
+                                    Bottom Border only
+                                <code>.form-control-border</code>
+                                </label>
+                                <input type="text" class="form-control form-control-border" id="exampleInputBorder" placeholder=".form-control-border">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputBorderWidth2">
+                                    Bottom Border only 2px Border
+                                    <code>.form-control-border.border-width-2</code>
+                                </label>
+                                <input type="text" class="form-control form-control-border border-width-2" id="exampleInputBorderWidth2" placeholder=".form-control-border.border-width-2">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputRounded0">
+                                    Flat
+                                    <code>.rounded-0</code>
+                                </label>
+                                <input type="text" class="form-control rounded-0" id="exampleInputRounded0" placeholder="rounded-0">
+                            </div>
+                            <h4>Custom Seclect</h4>
+                            <div class="form-group">
+                                <label for="exampleSelectBoder">
+                                    Bottom Border only
+                                    <code>.form-control-border</code>
+                                </label>
+                                <select class="custom-select form-control-border" id="exampleSelectBoder">
+                                    <option>
+                                        Value 1
+                                    </option>
+                                    <option>
+                                        Value 2
+                                    </option>
+                                    <option>
+                                        Value 3
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputBorderWidth2">
+                                    Bottom Border only 2px Border
+                                    <code>.form-control-border.border-width-2</code>
+                                </label>
+                                <select class="custom-select form-control-border border-width-2" id="exampleSelectBorderWidth2">
+                                    <option>
+                                        Value 1
+                                    </option>
+                                    <option>
+                                        Value 2
+                                    </option>
+                                    <option>
+                                        Value 3
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputRounded0">
+                                    Flat
+                                    <code>.rounded-0</code>
+                                </label>
+                                <select class="custom-select rounded-0" id="exampleSelectRounded0">
+                                    <option>
+                                        Value 1
+                                    </option>
+                                    <option>
+                                        Value 2
+                                    </option>
+                                    <option>
+                                        Value 3
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+                <div class="card card-info">
+                    <div class="card-header">
+                        Input Addon
+                    </div>
+                    <form>
+                        <div class="card-body">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">@</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Username">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">.00</span>
+                                </div>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">@</span>
+                                </div>
+                                <input type="text" class="form-control">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">.00</span>
+                                </div>
+                            </div>
+                            <h4>With icons</h4>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                </div>
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-check"></i></span>
+                                </div>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-dollar-sign"></i></span>
+                                </div>
+                                <input type="text" class="form-control">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-ambulance"></i></span>
+                                </div>
+                            </div>
+                            <h5>With checkbox and radio inputs</h5>
+                            <div class="d-flex">
+                                <div class="col-lg-6">
+                                    <div class="input-group d-flex">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><input type="checkbox"></span>
+                                        </div>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="input-group d-flex">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><input type="radio"></select></span>
+                                        </div>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>

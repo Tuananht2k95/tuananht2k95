@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    #nav {
+        .padleft-10 {
+            padding-left: 10.5rem;
+        }
+
+        .padleft-5 {
+            padding-left: 4rem;
+        }
+
+    }
+
+    #aside {
+        .w-aside-10 {
+            width: 10rem;
+        }
+
+        .w-aside-5 {
+            width: 4rem;
+        }
+
+        img {
+            width: 33px;
+            aspect-ratio: 1;
+        }
+
+        #logo {
+
+        }
+
+        #user {
+
+        }
+
+        #aside-search {
+
+        }
+        
+        ul {
+            li {
+                a {
+                    .iInP {
+                        right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    #main {
+        .card {
+            display: flex;
+        }
+    }
+}
